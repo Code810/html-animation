@@ -1,0 +1,131 @@
+
+.display{
+    height: 500px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.triangle1{
+    width: 50%;
+    display: flex;
+    align-items: center;
+ flex-direction: column;
+}
+.line1{
+    width: 400px;
+    height: 10px;
+    background-color: black;
+    transform: rotate(-15deg);
+    margin-top: 500px;
+    animation-name: line1;
+    animation-delay: .35s;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+  
+}
+.display img{
+    width: 130px;
+    margin-top: -10px;
+}
+
+.img1{
+position: absolute;
+left: 418px;
+bottom: 25px;
+animation-name: img1;
+animation-duration: 10s;
+transform: rotate(-15deg);
+animation-delay: .34s;
+animation-timing-function: linear;
+
+
+}
+.person{
+    position: absolute;
+    right: 450px;
+    top: -150px;
+    animation: person 8.5s ;
+    animation-iteration-count: 1;
+animation-timing-function: linear;
+}
+.parasut{
+    position: absolute;
+    left: 510px;
+    top: -160px;
+    animation: parasut 8.7s ;
+    animation-timing-function: linear;
+    animation-delay: 4s;
+   opacity: 0.5;
+    
+}
+@keyframes parasut{
+   0%{
+    left: 500px;
+    top: -160px;
+   }
+   60%{
+    left: 380px;
+    top: 250px;
+   }
+   99%{
+    transform: rotate(-45deg);
+    left: 350px;
+    top: 250px;
+   }
+   100%{
+    top: 1;
+    opacity: 0;
+   }
+  
+}
+
+@keyframes person {
+5%{
+    right: 418px;
+    top: 350px;
+    transform: rotate(15deg);
+}
+95%{
+    right: 450px;
+    top: 350px;
+}
+
+
+}
+@keyframes img1 {
+    1%{
+        left: 418px;
+        bottom: 34px;
+        transform: rotate(15deg);
+    }
+    10%{
+        left:518px;
+        bottom: 625px;
+    }
+    87%{
+        left: 418px;
+        bottom: 28px;
+        transform: rotate(0deg);
+    }
+    1%{
+        left: 418px;
+        bottom: 25px;
+        transform: rotate(-15);
+    }
+    1%{
+        left: 418px;
+        bottom: 24px;
+        transform: rotate(-15);
+    }
+    
+}
+@keyframes line1 {
+   3%{
+        transform: rotate(15deg);
+    }
+    97%{
+        transform: rotate(15deg);
+    }
+}

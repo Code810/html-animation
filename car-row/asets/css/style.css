@@ -1,0 +1,83 @@
+body{
+    overflow: hidden;
+    background-color: rgb(82, 172, 172);
+}
+.way{
+    position: absolute;
+    width: 3000px;
+    height: 20px;
+    background-color: black;
+    top: 300px;
+}
+.building{
+        width: 25%;
+    top: 10px;
+    left: 600px;
+}
+.tree1{
+    width: 10%;
+}
+.tree2{
+    width: 10%;
+}
+.stone{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 600px;
+}
+.city1{
+    width: 1200px;
+    height: 310px;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    right: -1200px;
+    animation: city 10s infinite;
+    animation-timing-function: linear;
+}
+.car{
+    position: absolute;
+    width: 10%;
+    top: 220px;
+    left: 500px;
+    animation-name: car;
+    animation-duration: 1s;
+    animation-delay: 5s;
+    animation-timing-function: linear;
+}
+.smoke{
+    position: absolute;
+    width: 3%;
+    top:270px;
+    left: 463px;
+   opacity: 0;
+   animation: smoke 1s 3s;
+   animation-iteration-count: infinite;
+   
+}
+@keyframes smoke{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes city{
+    0%{
+        right: -1200px;
+    }
+    100%{
+        right: 1200px;
+    }
+}
+@keyframes car{
+    0%{
+      transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
